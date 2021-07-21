@@ -15,6 +15,7 @@ catbreeds.addEventListener("submit", (e) => {
 
     let target = catbreeds.getinput.value.trim();
     catbreeds.reset();
+    catbreeds.childNodes[1].blur();
 
     updateUI(target);
 })
