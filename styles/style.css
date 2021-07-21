@@ -1,0 +1,48 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background-image: url("images.jpeg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.imag
+{
+    margin-top: 15px;
+}
+.card
+{
+    margin-bottom: 15px;
+}
+.heading
+{
+    letter-spacing: 3px;
+}
+.catbreed{
+    margin: 0 10px 0 10px;
+}
+.breedname
+{
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 2px;
+    overflow-wrap: break-word;
+}
+
+.origin
+{
+    text-align: center;
+}
+.desc
+{
+    color: rgb(20, 19, 19);
+}
+.meters
+{
+    color: rgb(20, 19, 19);
+}
+.meters meter
+{
+    width: 100%;
+    margin-bottom: 10px;
+}
