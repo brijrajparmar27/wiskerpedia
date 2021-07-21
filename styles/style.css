@@ -2,9 +2,9 @@ body
 {
     margin: 0;
     padding: 0;
-    background-image: url("images.jpeg");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+    background-image: url("../bg.jpg");
+    background-size: 200px;
+    background-repeat: round;
 }
 .imag
 {
