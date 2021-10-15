@@ -8,6 +8,15 @@ const catbreeds = document.querySelector("form");
 
 const c1 = new cats();
 
+//Add breeds to input list options
+c1.getCatBreeds().then((resolve) => {
+    Array.from(resolve)
+        .forEach((cat) => {
+            breeds.innerHTML += `<option value="${cat.name}">`;
+        });
+});
+
+
 // listen submit events
 catbreeds.addEventListener("submit", (e) => {
     
@@ -57,16 +66,8 @@ const updateUI = (target) => {
     <meter value="${targetcat[0]['child_friendly']}" min="0" max="5"></meter>`;
 
     //Inject Data
-    breedname.innerHTML = targetcat[0]['name'];
     imag.setAttribute('src', targetcat[0]['image']['url']);
+    breedname.innerHTML = targetcat[0]['name'];
     details.innerHTML = inject;
 
 }
-
-//Add breeds to input list options
-c1.getCatBreeds().then((resolve) => {
-    Array.from(resolve)
-        .forEach((cat) => {
-            breeds.innerHTML += `<option value="${cat.name}">`;
-        });
-});
