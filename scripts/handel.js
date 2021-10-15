@@ -2,7 +2,7 @@
 const breeds = document.querySelector("datalist");
 const card = document.querySelector(".card");
 const breedname = document.querySelector(".breedname");
-const imag = document.querySelector(".imag");
+const image = document.querySelector(".image");
 const details = document.querySelector(".details");
 const catbreeds = document.querySelector("form");
 
@@ -66,7 +66,7 @@ const updateUI = (target) => {
     <meter value="${targetcat[0]['child_friendly']}" min="0" max="5"></meter>`;
 
     //Inject Data
-    imag.setAttribute('src', targetcat[0]['image']['url']);
+    image.setAttribute('src', targetcat[0]['image']['url']);
     breedname.innerHTML = targetcat[0]['name'];
     details.innerHTML = inject;
 
